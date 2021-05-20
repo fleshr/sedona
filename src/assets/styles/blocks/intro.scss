@@ -1,0 +1,42 @@
+.intro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9rem 0 8.5rem;
+  background-image: url("../images/bg-intro-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 5.7rem;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-image: url("../images/border-intro.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include breakpoint-min($tablet-width) {
+    padding: 7.8rem 0 9rem;
+    background-image: url("../images/bg-intro-tablet@1x.jpg");
+  }
+
+  @include breakpoint-min($desktop-width) {
+    background-image: url("../images/bg-intro-desktop@1x.jpg");
+  }
+}
+
+.intro__image {
+
+  @include breakpoint-min($tablet-width) {
+    width: auto;
+    height: 35rem;
+  }
+
+}

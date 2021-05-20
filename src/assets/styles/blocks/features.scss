@@ -1,0 +1,57 @@
+.features__header {
+  position: relative;
+  padding: 3.3rem 2rem 4.4rem;
+  text-align: center;
+
+  @include breakpoint-max($tablet-width - 0.0625em) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -2.8rem;
+      width: 100%;
+      height: 3.7rem;
+      background-color: $blue;
+      background-image: url("../images/border-features.svg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  @include breakpoint-min($tablet-width) {
+    padding: 4.5rem 12.5rem 5.3rem;
+  }
+
+  @include breakpoint-min($desktop-width) {
+    padding: 5.6rem 35rem 4.2rem;
+  }
+}
+
+.features__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.45;
+  text-transform: uppercase;
+  color: $black;
+
+  @include breakpoint-min($tablet-width) {
+    font-size: 2.1rem;
+    line-height: 1.25;
+  }
+}
+
+.features__subtitle {
+  margin: 0;
+  margin-top: 3rem;
+  line-height: 1.86;
+  text-transform: uppercase;
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

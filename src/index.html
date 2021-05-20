@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City of Sedona | Home</title>
+  <link rel="preload" href="assets/fonts/ptsans-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="assets/fonts/ptsans-bold.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="assets/styles/style.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=e09126b5-9fc8-4dd2-9350-76ab865c8891&lang=ru_RU"
+    type="text/javascript"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Фото и видео</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Форма отзыва</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+        <div class="site-nav__bar">
+          <a class="site-nav__logo" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="assets/images/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="assets/images/logo-tablet.svg">
+              <img src="assets/images/logo-mobile.svg" alt="Логотип">
+            </picture>
+          </a>
+          <button class="site-nav__toogle">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div class="intro">
+        <img class="intro__image" src="assets/images/text-intro.svg" width="282" height="214"
+          alt="Welcome to the gorgeous Sedona">
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="features">
+        <header class="features__header">
+          <h2 class="features__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="features__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </header>
+        <ol class="features__list cards">
+          <li class="cards__item cards__item--image">
+            <div class="cards__content">
+              <h3 class="cards__title">Настоящий городок</h3>
+              <span class="cards__order">— №1 —</span>
+              <p class="cards__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="cards__image">
+              <img src="assets/images/photo-city-mobile@1x.jpg" alt="">
+            </div>
+            <ul class="cards__sublist sublist">
+              <li class="sublist__item sublist__item--house">
+                <div class="sublist__content">
+                  <h4 class="sublist__title">Жилье</h4>
+                  <p class="sublist__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </div>
+              </li>
+              <li class="sublist__item sublist__item--gift">
+                <div class="sublist__content">
+                  <h4 class="sublist__title">Сувениры</h4>
+                  <p class="sublist__text">Не только китайского, но и местного производства!</p>
+                </div>
+              </li>
+              <li class="sublist__item sublist__item--burger">
+                <div class="sublist__content">
+                  <h4 class="sublist__title">Еда</h4>
+                  <p class="sublist__text">Всегда заказывайте Фирменный бургер, Вы не разочаруетесь!</p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="cards__item cards__item--image">
+            <div class="cards__content">
+              <h3 class="cards__title">Там есть Мост Дьявола</h3>
+              <span class="cards__order">— №2 —</span>
+              <p class="cards__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="cards__image">
+              <img src="assets/images/photo-bridge-mobile@1x.jpg" alt="">
+            </div>
+          </li>
+          <li class="cards__item cards__item--grey">
+            <div class="cards__content">
+              <h3 class="cards__title">Небольшая площадь</h3>
+              <span class="cards__order">— №3 —</span>
+              <p class="cards__text">Все интересные места находятся очень близко</p>
+            </div>
+          </li>
+          <li class="cards__item cards__item--grey">
+            <div class="cards__content">
+              <h3 class="cards__title">Красивая дорога</h3>
+              <span class="cards__order">— №4 —</span>
+              <p class="cards__text">Ехать в Седону из ЛасВегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li class="cards__item cards__item--grey">
+            <div class="cards__content">
+              <h3 class="cards__title">Мало туристов</h3>
+              <span class="cards__order">— №5 —</span>
+              <p class="cards__text">Большинство едет в гранд каньон и толпится там</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+      <section class="search">
+        <header class="search__header">
+          <h2 class="search__title">Заинтересовались?</h2>
+          <p class="search__subtitle">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+          </p>
+          <button class="search__button button" type="button">Найти гостиницу</button>
+        </header>
+        <div class="search__map">
+          <div id="map"></div>
+        </div>
+        <script type="text/javascript">
+        ymaps.ready(function () {
+          var map = new ymaps.Map('map', {
+            center: [34.869497, -111.760186],
+            zoom: 7,
+            type: 'yandex#hybrid',
+            controls: [],
+            behaviors: []
+          });
+
+          var marker = ymaps.templateLayoutFactory.createClass('<div class="search__map-marker"></div>');
+          map.geoObjects.add(new ymaps.Placemark([34.869497, -111.760186], {}, {
+            iconLayout: marker,
+            hasBalloon: false
+          }));
+        });
+      </script>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#">#visitSEDONA</a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/icon-twitter.svg" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/icon-facebook.svg" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/icon-youtube.svg" alt="">
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copy">
+        Разработано
+        <a class="page-footer__copy-link" href="#">
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+          </svg>
+        </a>
+      </p>
+    </footer>
+  </div>
+  <script src="assets/scripts/main.js"></script>
+</body>
+</html>

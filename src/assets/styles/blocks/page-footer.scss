@@ -1,0 +1,49 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.8rem 0;
+  color: $black;
+
+  @include breakpoint-min($tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3.5rem 6rem;
+  }
+
+  @include breakpoint-min($desktop-width) {
+    padding: 3.5rem 12rem;
+  }
+}
+
+.page-footer__logo {
+  padding: .35em;
+  font-weight: 700;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page-footer__social {
+  margin: 2.4rem 0 3.4rem;
+
+  @include breakpoint-min($tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__copy {
+  margin: 0;
+  margin-right: -.5em;
+  text-transform: uppercase;
+}
+
+.page-footer__copy-link {
+  display: inline-block;
+  padding: .5em;
+  vertical-align: middle;
+
+  svg {
+    display: block;
+  }
+}

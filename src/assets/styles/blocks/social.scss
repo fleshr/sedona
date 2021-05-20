@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  margin: 0 .3rem;
+}
+
+.social__link {
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: $blue;
+}
